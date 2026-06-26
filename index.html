@@ -650,12 +650,41 @@
     </p>
     <div class="apply-btn-wrap">
       <a href="tel:0458429683" class="btn-apply">📞 045-842-9683</a>
-      <a href="https://ig.me/m/taaacitalian" class="btn-email" target="_blank" rel="noopener">Instagram DM で応募する</a>
+      <button class="btn-email" onclick="document.getElementById('ig-modal').style.display='flex'" style="cursor:pointer; font-family:inherit;">Instagram DM で応募する</button>
       <a href="mailto:taaac.yokohama@gmail.com?subject=スタッフ応募" class="btn-email">メールで応募する</a>
       <p style="color:rgba(255,255,255,0.35); font-size:0.8rem;">taaac.yokohama@gmail.com</p>
     </div>
   </div>
 </section>
+
+<!-- INSTAGRAM DM MODAL -->
+<div id="ig-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:1000; align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1a; border:1px solid rgba(201,168,76,0.4); border-radius:8px; max-width:480px; width:100%; padding:36px 28px;">
+    <p style="font-size:0.75rem; letter-spacing:0.3em; color:#C9A84C; margin-bottom:12px;">INSTAGRAM DM</p>
+    <h3 style="font-size:1.2rem; font-weight:300; margin-bottom:20px; letter-spacing:0.05em;">以下の内容をDMでお送りください</h3>
+
+    <div style="background:#111; border-radius:6px; padding:20px 24px; margin-bottom:24px; font-size:0.92rem; line-height:2.2; color:rgba(255,255,255,0.85); border-left:3px solid #C9A84C;">
+      ① お名前<br>
+      ② 希望ポジション（キッチン / ホール）<br>
+      ③ 希望の勤務日・時間帯<br>
+      ④ 一言メッセージ（志望動機など）
+    </div>
+
+    <p style="font-size:0.8rem; color:rgba(255,255,255,0.4); margin-bottom:24px;">上記をコピーしてDMに貼り付けると便利です。</p>
+
+    <div style="display:flex; gap:12px;">
+      <a href="https://ig.me/m/taaacitalian" target="_blank" rel="noopener"
+        onclick="document.getElementById('ig-modal').style.display='none'"
+        style="flex:1; display:block; text-align:center; background:#C9A84C; color:#1a1a1a; padding:14px; border-radius:4px; text-decoration:none; font-weight:bold; letter-spacing:0.1em; font-size:0.95rem;">
+        Instagram を開く
+      </a>
+      <button onclick="document.getElementById('ig-modal').style.display='none'"
+        style="flex:0 0 auto; background:transparent; border:1px solid rgba(255,255,255,0.2); color:rgba(255,255,255,0.5); padding:14px 20px; border-radius:4px; cursor:pointer; font-size:0.85rem;">
+        閉じる
+      </button>
+    </div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
